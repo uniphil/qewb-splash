@@ -1,7 +1,3 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 17, ../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -65,4 +61,120 @@ a img {
 /* line 116, ../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
+}
+
+/* line 3, ../sass/_style.sass */
+html {
+  font-family: "PT Sans", sans-serif;
+}
+
+/* line 6, ../sass/_style.sass */
+h1 {
+  font-size: 1.5em;
+}
+
+/* line 9, ../sass/_style.sass */
+h2 {
+  font-weight: bold;
+}
+
+/* line 13, ../sass/_style.sass */
+h3 {
+  margin: 1em 0 0.5em;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+/* line 19, ../sass/_style.sass */
+em {
+  font-style: italic;
+}
+
+/* line 22, ../sass/_style.sass */
+b {
+  font-weight: bold;
+}
+
+/* line 25, ../sass/_style.sass */
+p {
+  margin: 0.5em 0;
+}
+
+/* line 6, ../sass/screen.sass */
+body {
+  background: #222222 url("../images/wavegrid.png");
+  color: #222222;
+}
+
+/* line 10, ../sass/screen.sass */
+#splash-content::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #f27121;
+  content: "";
+}
+
+/* line 20, ../sass/screen.sass */
+header {
+  width: 320px;
+  max-width: 80%;
+  margin: 1em auto;
+  text-align: center;
+}
+/* line 25, ../sass/screen.sass */
+header img {
+  display: block;
+  width: 100%;
+}
+/* line 28, ../sass/screen.sass */
+header h2 {
+  text-align: right;
+  margin-top: -1em;
+  margin-left: 20%;
+}
+/* line 32, ../sass/screen.sass */
+header p {
+  margin: 1em 0;
+  text-align: left;
+}
+
+/* line 36, ../sass/screen.sass */
+#splash-content {
+  padding: 1em;
+}
+
+/* line 39, ../sass/screen.sass */
+#faq {
+  padding: 2em 0;
+}
+/* line 41, ../sass/screen.sass */
+#faq article {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  width: 33%;
+  padding: 0.5em;
+}
+@media (max-width: 620px) {
+  /* line 41, ../sass/screen.sass */
+  #faq article {
+    width: 100%;
+  }
+}
+/* line 49, ../sass/screen.sass */
+#faq article h2 {
+  border-top: 2px solid #f27121;
+  padding: 0.4em;
+  background: white;
+  text-align: center;
+}
+/* line 55, ../sass/screen.sass */
+#faq article .article-body {
+  padding: 0.4em;
 }

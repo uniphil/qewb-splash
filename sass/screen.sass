@@ -1,7 +1,56 @@
-/*
-  Welcome to Compass.
-  In this file you should write your main styles. (or centralize your imports)
-  Import this file using the following HTML or equivalent:
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+@import _style
+@import compass/css3/box-sizing
 
-@import compass/reset
+$ewb: rgb(242, 113, 33)
+
+body
+  background: #222 url('../images/wavegrid.png')
+  color: #222
+
+#splash-content::before
+  display: block
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  height: 4px
+  background: $ewb
+  content: ""
+
+header
+  width: 320px
+  max-width: 80%
+  margin: 1em auto
+  text-align: center
+  img
+    display: block
+    width: 100%
+  h2
+    text-align: right
+    margin-top: -1em
+    margin-left: 20%
+  p
+    margin: 1em 0
+    text-align: left
+
+#splash-content
+  padding: 1em
+
+#faq
+  padding: 2em 0
+  article
+    display: block
+    @include box-sizing(border-box)
+    float: left
+    width: 33%
+    padding: 0.5em
+    @media (max-width: 620px)
+      width: 100%
+    h2
+      border-top: 2px solid $ewb
+      padding: 0.4em
+      background: #fff
+      text-align: center
+
+    .article-body
+      padding: 0.4em
